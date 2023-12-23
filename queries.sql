@@ -17,3 +17,28 @@ values
 (0, 2, "2022", "RX430", "Lexus"),
 (0, 2, "2024", "CX90", "Mazda")
 
+
+
+
+INSERT INTO db_relationships.class
+(class_id, name, `time`)
+values
+(0, "Python Fundamentals", "2PM"),
+(0, "SQL", "10AM");
+
+INSERT INTO db_relationships.student
+(student_id, name, date_of_birth)
+VALUES
+(0, "John Smith", "2000-06-25"),
+(0, "Brad Baker", "1999-04-14"),
+(0, "Carrie Grisham", "2001-07-04"),
+(0, "Doug Hugh", "1998-03-24");
+
+
+INSERT INTO db_relationships.student_class
+(student_id, class_id)
+VALUES(1, 1),
+(1, 2),
+(2, 1),
+(3, 2),
+(4, 1);
